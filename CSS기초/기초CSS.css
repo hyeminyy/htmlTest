@@ -1,3 +1,33 @@
-p{
-    color: blue;
+main{
+    background-color: antiquewhite;
+    border-radius: 2%;
 }
+
+header{
+    background-color: azure;
+    border-radius: 2%;
+}
+
+footer{
+    background-color: black;
+    color: white !important;
+}
+
+nav li a{
+    text-decoration-line: none;
+    color: gray;
+}
+
+#menu > li{
+    background-color: blue;
+    color: white;
+}
+
+ .s1{
+    background-color: aqua;
+}
+
+ .s2{
+    background-color: blue;
+}
+
