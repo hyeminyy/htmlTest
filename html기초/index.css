@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(254, 255, 255);
+}
+
+/* main, header, footer{
+    width: 100%;
+} */
+
+footer{
+    background-color:rgb(219, 238, 255);
+    margin: 10px;
+    padding: 10px;
+}
+
+header h1{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    background: linear-gradient(to right top, #0077ff, #fff);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+section ul{
+    list-style: none;
+}
+section a{
+    text-decoration-line: none;
+    color: black;
+    font-size: 14px;
+}
+.lihov li{
+    padding: 10px;
+    margin: 5px;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+.lihov li:hover{
+    background-color: rgb(155, 208, 255);
+}
+
+
+footer img{
+    width: 40px;
+}
+

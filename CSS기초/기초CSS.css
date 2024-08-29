@@ -50,7 +50,8 @@ footer > ul > li > span{
 }
 main, header, footer{
     width: 80%;
-    margin-left: 10%;
+    margin-left: 5%;
+
 }
 
 nav li a{
@@ -127,6 +128,14 @@ section{
     width: 120px;
     border-radius: 100%;
 
+}
+
+@media screen and (max-width : 1024px){
+    main, header, footer{
+        width: 100%;
+        matgin-left: 0px;
+        
+    }
 }
 
 
