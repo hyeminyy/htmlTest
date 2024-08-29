@@ -1,33 +1,133 @@
+*{
+    margin : 0px;
+    padding : 0px;
+}
 main{
-    background-color: antiquewhite;
+    background-color: aliceblue;
     border-radius: 2%;
 }
 
-header{
-    background-color: azure;
+/* header{
+    background-color: rgb(134, 255, 255);
     border-radius: 2%;
+} */
+
+header{
+    background-color: aliceblue;
+    height: 80px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+header, header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer{
-    background-color: black;
-    color: white !important;
+    background-color: rgb(215, 248, 196);
+    color: black !important;
+    border-radius: 12px;
+}
+
+footer > ul{
+    list-style: none;
+    padding: 3px;
+    color: rgb(77, 77, 77);
+}
+
+footer > ul > li{
+    font-size: 13px;
+    margin: 10px;
+    
+}
+
+footer > ul > li > span{
+    font-weight: bolder;
+}
+main, header, footer{
+    width: 80%;
+    margin-left: 10%;
 }
 
 nav li a{
     text-decoration-line: none;
     color: gray;
 }
+header img{
+    width: 60px;
+    border-radius: 100%;
+}
 
 #menu > li{
-    background-color: blue;
-    color: white;
+    /* background-color: blue;
+    color: white; */
 }
 
- .s1{
-    background-color: aqua;
+.menuli li{
+    background-color: aliceblue;
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style: none;
+    border-radius: 5px;
 }
 
- .s2{
-    background-color: blue;
+.menuli li:hover{
+    background-color:rgb(204, 231, 255);
 }
+
+.menuli a{
+    color: black;
+}
+
+article{
+    padding : 30px;
+    margin: 10px;
+    /* text-align: center; */
+}
+
+article > h1{
+    text-align: center;
+    padding: 10px;
+}
+
+article > p{
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+p > span{
+    background-color: rgb(255, 243, 138);
+    font-weight: bold;
+}
+
+section{
+    margin: 10px;
+    padding:20px 30px;
+    background-color: rgb(255, 238, 238);
+    border-radius: 12px;
+}
+
+.secDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+}
+
+.secDiv-img > img{
+    margin-right: 20px;
+    width: 120px;
+    border-radius: 100%;
+
+}
+
+
 
