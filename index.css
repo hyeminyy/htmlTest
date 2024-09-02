@@ -7,10 +7,15 @@ body{
     width: 100%;
 } */
 
+header {
+    height: 120px;
+}
 footer{
-    background-color:rgb(219, 238, 255);
+    background-color:aliceblue;
     margin: 10px;
     padding: 10px;
+    position : fixed;
+    bottom : 0;
 }
 
 header h1{
@@ -21,6 +26,13 @@ header h1{
     background: linear-gradient(to right top, #0077ff, #fff);
     color: transparent;
     -webkit-background-clip: text;
+}
+
+section{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(209, 240, 255);
+    border-radius: 10px;
 }
 
 section ul{
