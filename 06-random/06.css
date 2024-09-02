@@ -1,0 +1,21 @@
+h2 > span{
+    color: rgb(19, 145, 135);
+    font-weight: bold;
+    padding-left: 10px;
+}
+#msg{
+    display:inline-block;
+    justify-content: center;
+    padding: 5px;
+}
+#msg > h2{
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.result{
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    border: 1px solid #ccc;
+}
