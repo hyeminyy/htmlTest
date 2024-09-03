@@ -1,0 +1,56 @@
+
+.sec,.row{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.col{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(236, 236, 236);
+}
+/* select::-ms-expand { 
+	display: none;
+}
+
+select{
+    width: 80%;
+    height: 30px;
+} */
+
+select {
+    width: 80%;
+    height: 35px;
+    padding: 5px 30px 5px 10px;
+    border-radius: 4px;
+    outline: 0 none;
+  }
+
+  select option {
+    background: rgb(227, 255, 174);
+    color: #000000;
+    padding: 3px 0;
+  }
+
+  input{
+    width: 80%;
+    height: 35px;
+    padding: 5px;
+    margin-left: 15px;
+    border-radius: 4px;
+    outline: 0 none;
+  }
+
+  label{
+    font-weight: bolder;
+  }

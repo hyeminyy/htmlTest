@@ -1,38 +1,29 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll('.btn1');
-    const computerMsg = document.querySelectorAll('#msg')[0].querySelector('img');
-    const userMsg = document.querySelectorAll('#msg')[1].querySelector('img');
-    const result = document.querySelector('.result h1');
+document.addEventListener('DOMContentLoaded', () => {
+    const imgs = document.querySelectorAll('.msg1 > img'); // Select all matching images
+    const msg = document.getElementById('msg');
+    const bts = document.querySelectorAll('button');
 
-    // 주사위 굴리기 함수
-    function rollDice() {
-        return Math.floor(Math.random() * 6) + 1;
+    for (let bt of bts) {
+        bt.addEventListener('click', () => {
+
+            let comN = Math.floor(Math.random() * 6) + 1;
+            imgs[0].setAttribute('src', `../html기초/img/${comN}.png`);
+            imgs[0].setAttribute('alt', `${comN}.png`);
+
+            let userN = parseInt(bt.textContent.charAt(0));
+            imgs[1].setAttribute('src', `../html기초/img/${userN}.png`);
+            imgs[1].setAttribute('alt', `${userN}.png`);
+
+
+            if (comN === userN) {
+                msg.textContent = '같음'; 
+            } else {
+                msg.textContent = '틀림';
+            }
+        });
     }
-
-    // 버튼 클릭 이벤트 핸들러
-    function handleButtonClick(event) {
-        // 사용자가 선택한 숫자
-        const userRoll = parseInt(event.target.innerText.charAt(0), 10);
-        
-        // 컴퓨터의 주사위 굴리기
-        const computerRoll = rollDice();
-
-        // 결과 화면에 표시
-        userMsg.src = `../html기초/img/${userRoll}.png`;
-        computerMsg.src = `../html기초/img/${computerRoll}.png`;
-
-        // 승패 결정
-        if (userRoll > computerRoll) {
-            result.innerText = "User Wins!";
-        } else if (userRoll < computerRoll) {
-            result.innerText = "Computer Wins!";
-        } else {
-            result.innerText = "It's a Tie!";
-        }
-    }
-
-    // 각 버튼에 클릭 이벤트 리스너 추가
-    buttons.forEach(button => {
-        button.addEventListener('click', handleButtonClick);
-    });
 });
+
+//let userN = parseInt(bt.textContent.charAt(0));
+//숫자 가져오는 것이 charAt(0) -------------------- <button class="btn1" id="bt1">1 선택</button>
+//<button class="btn1" id="bt1">선택 1</button> -------- slise (-1);

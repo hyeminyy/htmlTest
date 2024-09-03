@@ -3,12 +3,14 @@ h2 > span{
     font-weight: bold;
     padding-left: 10px;
 }
-#msg{
+.msg1{
     display:inline-block;
     justify-content: center;
     padding: 5px;
+
+
 }
-#msg > h2{
+.msg1 > h2{
     text-align: center;
     padding-bottom: 4px;
 }
