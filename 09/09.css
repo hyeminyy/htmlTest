@@ -1,0 +1,22 @@
+.sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  background-color: rgb(247, 255, 240);
+}
+.sec > input{
+  width:  40%;
+  height: 30px;
+  margin: 10px;
+}
+
+#txt2 {
+  background-color: rgb(234, 255, 222);
+}
+
+.sec > button{
+  width: 30%;
+  margin: 5px;
+}
