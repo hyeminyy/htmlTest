@@ -1,0 +1,30 @@
+.boxofficeMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.sec , .divDt {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divDt{
+    width:  80%;
+    height: 60px;
+    background-color: aliceblue;
+
+    flex-direction: row;
+    border: 1px solid rgb(179, 179, 179);
+}
+
+input[type-date]{
+    width: 40%;
+    height: 30px;
+}
+
