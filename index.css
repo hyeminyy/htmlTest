@@ -31,7 +31,7 @@ header h1{
 section{
     margin: 20px;
     padding: 20px;
-    background-color: rgb(209, 240, 255);
+    background-color: rgb(230, 247, 255);
     border-radius: 10px;
 }
 
@@ -41,7 +41,7 @@ section ul{
 section a{
     text-decoration-line: none;
     color: black;
-    font-size: 14px;
+    font-size: 15px;
 }
 .lihov li{
     padding: 10px;
@@ -51,7 +51,9 @@ section a{
     cursor: pointer;
 }
 .lihov li:hover{
-    background-color: rgb(155, 208, 255);
+    border-radius: 10px;
+    background-color: rgb(255, 240, 155);
+    font-weight: bold;
 }
 
 
