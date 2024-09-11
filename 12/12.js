@@ -4,7 +4,7 @@ const getData = (selDt, ul, repN) => {
   const testAPI = '82ca741a2844c5c180a208137bb92bd7';
   let url = `http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${testAPI}&targetDt=${selDt}`;
   if (repN !== 'T') {
-    url = url + `&repNationCd=${repN}`;
+    url += `&repNationCd=${repN}`;
   }
 
   fetch(url)
@@ -13,27 +13,24 @@ const getData = (selDt, ul, repN) => {
       console.log('API 응답 데이터:', data);  // 응답 데이터 구조 확인
       let dailyBoxOfficeList = data.boxOfficeResult.dailyBoxOfficeList;
 
-      // 필터링 로직 추가
       let items = dailyBoxOfficeList.map(item =>
         `<li class='mvli'>
             <span class='rank'>${item.rank}</span>
             <span class='movieNm'>${item.movieNm}</span>
-             <sapn class='openDt'>${item.openDt}</sapn>
+            <span class='openDt'>${item.openDt}</span>
             <span class='rankInten'>
-            ${item.rankInten > 0 ? 
+              ${item.rankInten > 0 ? 
                 '<span class="spRed">▲</span>' : item.rankInten < 0 ?  
-                                    '<span class="spBlue">▼</span>'  : '-'}
-            ${item.rankInten != 0 ? Math.abs(item.rankInten) : ''}
+                '<span class="spBlue">▼</span>'  : '-'}
+              ${item.rankInten != 0 ? Math.abs(item.rankInten) : ''}
             </span>
          </li>`
       ).join('');
       
       ul.innerHTML = items;
-      
     })
     .catch(err => console.error('API 호출 오류:', err));
 };
-
 
 // 어제 날짜 구하기 함수
 const getYesterday = () => {
@@ -63,12 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   dt.value = yesterday;
 
-  getData(dt.value.replace(/-/g, ''), ul, 'T');
-
   // 데이터 가져오기
   const updateMovies = () => {
     const selectedDate = dt.value.replace(/-/g, '');
-    const selectedNation = repNationCd.value || 'T';
+    const selectedNation = document.querySelector('input[name="repN"]:checked')?.value || 'T';
     if (selectedDate) {
       getData(selectedDate, ul, selectedNation);
     }

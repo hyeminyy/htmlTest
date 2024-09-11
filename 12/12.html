@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../js.css" />
-  <link rel="stylesheet" type="text/css" href="./11.css" />
+  <link rel="stylesheet" type="text/css" href="./12.css" />
   <title>JS기초</title>
 
   <!-- 외부 스크립트 -->
-  <script src="./11-1.js" defer></script>
+  <script src="./12.js" defer></script>
 </head>
 
 <body>
@@ -23,18 +23,18 @@
       <section class='sec'>
         <div class='divDt'>
           <input type='date' id='dt' name='dt'>
-          <label for="repNationCd">국가 필터:</label>
-          <select id="repNationCd" name="repNationCd">
-            <option value="T" selected>전체</option>
-            <option value="K">한국 영화</option>
-            <option value="F">외국 영화</option>
-          </select>
+          <fieldset id="repNationCd">
+            <input id="All" type="radio" name="repN" value="T" checked>
+            <label for="All">전체</label>
+            <input id="K" type="radio" name="repN" value="K">
+            <label for="K">한국</label>
+            <input id="F" type="radio" name="repN" value="F">
+            <label for="F">영어</label>
+          </fieldset>
         </div>
       </section>
       <section class='sec'>
-        <ul>
-          
-        </ul>
+        <ul></ul>
       </section>
     </main>
   </form>
