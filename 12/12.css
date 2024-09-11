@@ -1,3 +1,7 @@
+body{
+    font-family: "Jua", sans-serif;
+
+}
 .boxofficeMain{
     width: 100%;
     display: flex;
@@ -18,16 +22,21 @@
 .divDt{
     width:  80%;
     height: 50px;
-    background-color: aliceblue;
-
+    background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+    border: 1px solid #b3d9ff;
+    border-radius: 8px;
     flex-direction: row;
-    border: 1px solid rgb(179, 179, 179);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 input[type="date"], fieldset {
     width: 40%;
-    height: 30px;
+    height: 35px;
     margin: 5px;
+    border-radius: 4px; 
+    border: 1px solid #d0d0d0;
+    padding: 0 10px; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
 }
 fieldset{
     font-size: 15px;
@@ -54,21 +63,26 @@ fieldset{
     font-weight: bold;
 } */
 
-ul {
+/* ul {
     list-style-type: none;
     padding: 0;
-}
+} */
 
 .mvli {
     width: 100%;
-  height: 40px;
+     height: 30px;
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin: 10px;
+
+
+
     padding: 10px 15px;
     display: flex;
     align-items: center;
+    justify-content: space-between; 
+    font-size: 14px;
     
 }
 
@@ -79,19 +93,19 @@ ul {
 }
 
 .rank {
-    font-size: 20px;
-    color: #0069da;
+    font-size: 18px;
+    color: #0045da;
     margin-right: 10px;
+    font-weight: bold;
 }
 
 .movieNm {
-    font-size: 16px;
+    font-size: 15px;
     color: #333;
 }
 
 .dtradio{
     margin: 10px;
-
 }
 
 label{
@@ -130,3 +144,40 @@ span{
   .openDt {
     width: 20%;
   }
+
+
+  /* .sec 스타일링 */
+.sec {
+    width: 90%;
+    margin: 15px; 
+    padding: 1dvb; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* ul 스타일링 */
+.sec > ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    width: 100%; 
+}
+
+.sec > ul > li {
+    margin: 5px 0;
+    padding: 10px 15px; 
+    background: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.sec > ul > li:hover {
+    background-color: #e6f7ff; 
+}
